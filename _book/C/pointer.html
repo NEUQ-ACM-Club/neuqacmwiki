@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>指针 | neuqacmwiki</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../course/about.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="Wed Jul 29 2015 15:08:10 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="neuqacm/neuqacm.html">
+            
+                
+                    <a href="../neuqacm/neuqacm.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        NEUQ-ACM俱乐部
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="neuqacm/aboutneuqacm.html">
+            
+            <span><b>1.1.</b> 关于NEUQACM</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="neuqacm/history.html">
+            
+                
+                    <a href="../neuqacm/history.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        发展历史
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="contest_team/about.html">
+            
+                
+                    <a href="../contest_team/about.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        NEUQ-ACM竞赛队
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="course/about.html">
+            
+                
+                    <a href="../course/about.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        零基础入门课程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="C/c.html">
+            
+            <span><b>4.</b> C语言</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="C/pointer.html">
+            
+                
+                    <a href="../C/pointer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        指针
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >neuqacmwiki</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <blockquote>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="http://www.zhihu.com/question/31022750/answer/50629732" target="_blank">http://www.zhihu.com/question/31022750/answer/50629732</a></p>
+</blockquote>
+<ol>
+<li>&#x58F0;&#x660E;&#x53D8;&#x91CF;&#xFF1A;C&#x8BED;&#x8A00;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7559;&#x51FA;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x5730;&#x5740;&#x5355;&#x5143;&#x6765;&#x5B58;&#x50A8;&#x53D8;&#x91CF;&#x3002;<br>&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x53D8;&#x91CF;var&#x521D;&#x59CB;&#x5316;&#x4E3A;100&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x5C06;&#x5730;&#x5740;&#x4E3A;1004&#x7684;&#x5185;&#x5B58;&#x5355;&#x5143;&#x7559;&#x7ED9;&#x53D8;&#x91CF;&#xFF0C;&#x5E76;&#x5C06;&#x5730;&#x5740;1004&#x548C;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x540D;&#x79F0;&#x5173;&#x8054;&#x8D77;&#x6765;&#x3002;<br><img src="http://pic4.zhimg.com/462c8a3b87b8033a76ee7165d280ac73_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;">  </li>
+<li>&#x521B;&#x5EFA;&#x6307;&#x9488;&#xFF1A;&#x53D8;&#x91CF;var&#x7684;&#x5730;&#x5740;&#x662F;1004&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x5730;&#x5740;&#x7684;&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x53EF;&#x4EE5;&#x7528;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x4FDD;&#x5B58;&#x5B83;&#xFF0C;&#x5047;&#x8BBE;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E3A;p&#xFF0C;&#x6B64;&#x65F6;&#x53D8;&#x91CF;p&#x672A;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x7CFB;&#x7EDF;&#x4E3A;&#x5B83;&#x5206;&#x914D;&#x4E86;&#x7A7A;&#x95F4;&#xFF0C;&#x4F46;&#x503C;&#x8FD8;&#x4E0D;&#x786E;&#x5B9A;&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;<br><img src="http://pic3.zhimg.com/45fcc3da148d3b57b07f110e5ed085a6_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;">  </li>
+<li>&#x521D;&#x59CB;&#x5316;&#x6307;&#x9488;&#xFF0C;&#x5C06;&#x53D8;&#x91CF;var&#x7684;&#x5730;&#x5740;&#x5B58;&#x50A8;&#x5230;&#x53D8;&#x91CF;p&#x4E2D;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x540E;&#xFF08;<code>p=&amp;var</code>&#xFF09;&#xFF0C;p&#x6307;&#x5411;var&#xFF0C;&#x79F0;&#x4E3A;&#x4E00;&#x4E2A;&#x6307;&#x5411;var&#x7684;&#x6307;&#x9488;&#x3002;&#x6307;&#x9488;&#x662F;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x5B58;&#x50A8;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x5730;&#x5740;&#x3002;<br><img src="http://pic4.zhimg.com/b294108263f367e310ece2d03b3f21a3_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;">  </li>
+<li>&#x58F0;&#x660E;&#x6307;&#x9488;&#xFF1A;<code>typename *p</code>  &#x5176;&#x4E2D;typename&#x6307;&#x7684;&#x662F;var&#x7684;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x662F; short ,char ,float,&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x7C7B;&#x578B;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x5B57;&#x8282;&#x4E0D;&#x540C;&#xFF0C;short&#x5360;2&#x4E2A;&#x5B57;&#x8282;&#xFF0C;char&#x5360;1&#x4E2A;&#x5B57;&#x8282;&#xFF0C;float&#x5360;4&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x6307;&#x9488;&#x7684;&#x503C;&#x7B49;&#x4E8E;&#x5B83;&#x6307;&#x5411;&#x53D8;&#x91CF;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#x7684;&#x5730;&#x5740; &#x3002;<code>*</code>&#x662F;&#x95F4;&#x63A5;&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x8BF4;&#x660E;p&#x662F;&#x6307;&#x9488;&#x53D8;&#x91CF;&#xFF0C;&#x4E0E;&#x975E;&#x6307;&#x9488;&#x53D8;&#x91CF;&#x533A;&#x522B;&#x5F00;&#x6765;&#x3002;  </li>
+<li><code>*p</code>&#x548C;var&#x6307;&#x7684;&#x662F;var&#x7684;&#x5185;&#x5BB9;&#xFF1B;p&#x548C;<code>&amp;var</code>&#x6307;&#x7684;&#x662F;var&#x7684;&#x5730;&#x5740;&#x3002;<br><img src="http://pic1.zhimg.com/d7467c68809c04c6cc0401831bbbca6c_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;">  </li>
+<li>&#x65E2;&#x7136;&#x6307;&#x9488;<code>*p</code>&#x7684;&#x503C;&#x7B49;&#x4E8E;var,p&#x7684;&#x503C;&#x7B49;&#x4E8E;<code>&amp;var</code>&#xFF0C;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x591A;&#x53D1;&#x660E;&#x8FD9;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x7B26;&#x53F7;&#x589E;&#x52A0;&#x8BB0;&#x5FC6;&#x91CF;&#x5462;&#x3002;&#x6307;&#x9488;&#x4E3B;&#x8981;&#x7684;&#x529F;&#x80FD;&#x6709;&#x4E24;&#x4E2A;&#xFF1A;&#x907F;&#x514D;&#x526F;&#x672C;&#x548C;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x3002;<br>&#x6307;&#x9488;&#x7684;&#x91CD;&#x8981;&#x529F;&#x80FD;&#x662F;&#x51FD;&#x6570;&#x4E4B;&#x95F4;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x3002;<br>Talk is cheap, show me the code!
+&#x5047;&#x8BBE;&#x7528;c&#x8BED;&#x8A00;&#x8BBE;&#x8BA1;&#x4E00;&#x4E2A;&#x6E38;&#x620F;&#xFF0C;&#x63A7;&#x5236;&#x4EBA;&#x7269;&#x5411;&#x524D;&#x8D70;&#x7684;&#x51FD;&#x6570;&#x4E3A; go_forward(),&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63A5;&#x6536;&#x6E38;&#x620F;&#x4EBA;&#x7269;&#x7684;&#x5750;&#x6807;&#xFF08;int x,int y) &#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x52A0;&#x51CF;&#x64CD;&#x4F5C;&#x3002;</li>
+</ol>
+<pre><code>#include &lt;stdio.h&gt;
+void go_forward(int position_x,int position_y)
+{
+    position_x=position_x+1;
+    position_y=position_y+1;
+}
+int main()
+{
+    int x=0;
+    int y=0;
+    go_forward(x,y);
+    printf(&quot;&#x5F53;&#x524D;&#x5750;&#x6807;&#x4E3A;&#xFF1A;%d,%d \n&quot;,x,y);
+    return 0;
+}
+</code></pre><p>&#x4F60;&#x5E0C;&#x671B;&#x6267;&#x884C;go_forward()&#x51FD;&#x6570;&#x540E;x,y&#x5750;&#x6807;&#x90FD;+1&#xFF0C;&#x8F93;&#x51FA;&#x4E3A;(1&#xFF0C;1)&#xFF0C;&#x4F46;&#x662F;&#x7ED3;&#x679C;&#x8FD8;&#x662F;(0&#xFF0C;0)&#xFF0C;&#x539F;&#x56E0;&#x662F;C&#x8BED;&#x8A00;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x6309;&#x503C;&#x4F20;&#x9012;&#x53C2;&#x6570;&#x3002;
+&#x4EE5;x&#x53C2;&#x6570;&#x4E3A;&#x4F8B;&#xFF0C;&#x521A;&#x5F00;&#x59CB;main&#x51FD;&#x6570;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;x&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x503C;&#x4E3A;0&#xFF0C;&#x5F53;&#x8BA1;&#x7B97;&#x673A;&#x8C03;&#x7528;<code>go_forward()</code>&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x5B83;&#x5C06;&#x53D8;&#x91CF;x&#x7684;&#x503C;&#x590D;&#x5236;&#x7ED9;&#x4E86;&#x53C2;&#x6570;position_x&#xFF0C;&#x8FD9;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x8D4B;&#x503C;&#x8FC7;&#x7A0B;&#x5C06;&#x53D8;&#x91CF;x&#x8D4B;&#x503C;&#x7ED9;&#x53D8;&#x91CF;<code>position_x</code>&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;<code>position_x=x</code>&#x547D;&#x4EE4;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;x&#x7684;&#x503C;&#x662F;&#x4E0D;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#xFF0C;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;x&#x7684;&#x503C;&#x4ECD;&#x4E3A;0&#xFF0C;position_x&#x7684;&#x503C;&#x53D8;&#x4E3A;1&#x3002;<br><img src="http://pic3.zhimg.com/ce8519ba43376a5e1ebe8793cfb13e8a_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;"><br>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;&#x4F20;&#x9012;&#x6307;&#x9488;&#xFF0C;&#x7528;&#x6307;&#x9488;&#x544A;&#x8BC9;go_forward()&#x51FD;&#x6570;&#x53C2;&#x6570;x&#x7684;&#x503C;&#x7684;&#x5730;&#x5740;&#xFF0C;go_forward()&#x51FD;&#x6570;&#x5C31;&#x80FD;&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x5730;&#x5740;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x3002;
+&#x6240;&#x4EE5;&#x7528;&#x6307;&#x9488;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x8BA9;&#x51FD;&#x6570;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x5668;&#xFF0C;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x53E6;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x8981;&#x63D0;&#x4F9B;&#x6570;&#x636E;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x4FEE;&#x6539;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code>#include &lt;stdio.h&gt;
+void go_foward(int *position_x,int*position_y)
+{
+    *position_x=*position_x+1;
+    *position_y=*position_y+1;
+}
+int main()
+{
+    int x=0;
+    int y=0;
+    go_forward(&amp;x,&amp;y);
+    printf(&quot;&#x5F53;&#x524D;&#x5750;&#x6807;&#x4E3A;&#xFF1A;%d,%d \n&quot;,x,y);
+    return 0;
+}
+</code></pre><p><img src="http://pic3.zhimg.com/008185b3765c2ad531bd83d7426315fa_b.jpg" alt="&#x6B64;&#x5904;&#x8F93;&#x5165;&#x56FE;&#x7247;&#x7684;&#x63CF;&#x8FF0;"><br>&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF1A;&#x5F53;&#x524D;&#x5750;&#x6807;&#x4E3A;&#xFF1A;1&#xFF0C;1</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../course/about.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 零基础入门课程"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
