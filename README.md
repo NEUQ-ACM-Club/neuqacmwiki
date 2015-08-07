@@ -15,3 +15,8 @@ npm install gitbook-cli -g
 gitbook serve ./
 gitbook build ./ --output=./_book
 ```
+然后在服务器上把 _book 目录设成 web server 根目录即可。
+
+## Todo
+
+- 添加 webhook 自动部署 
